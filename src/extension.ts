@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 
 	const disposable = vscode.commands.registerCommand('mrsc.auth_strapi', async () => {
-		vscode.window.showInformationMessage('Hello World from mrsc!');
+		vscode.window.showInformationMessage('authentication in Strapi!');
 	
 		  axios
 		  .post('http://localhost:1337/admin/auth/login', 
